@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recruitment Solution</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -14,7 +16,7 @@
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="login/login.html">Login</a></li>
       </ul>
     </nav>
   </header>
@@ -49,9 +51,29 @@
     </div>
   </section>
 
+  <section class="candidate-search">
+    <h2>Candidate Search</h2>
+    <div class="search-form">
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter location">
+      </div>
+      <div class="form-group">
+        <label for="jobRole">Job Role</label>
+        <input type="text" id="jobRole" name="jobRole" placeholder="Enter job role">
+      </div>
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="candidateList" class="candidate-list">
+      <!-- Candidate listing will be dynamically populated here -->
+    </div>
+  </section>
+
+
   <section class="testimonial">
     <blockquote>
-      "Our company has significantly improved the hiring process using this recruitment solution. It has saved us time and helped us find top talent efficiently."
+      "Our company has significantly improved the hiring process using this recruitment solution. It has saved us time
+      and helped us find top talent efficiently."
     </blockquote>
     <cite>- John Doe, HR Manager at XYZ Corporation</cite>
   </section>
@@ -59,5 +81,8 @@
   <footer>
     <p>&copy; 2023 Your Company. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

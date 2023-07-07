@@ -1,0 +1,276 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  width: 50%;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature-item img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Testimonial Section */
+.testimonial {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial cite {
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* Responsive Design */
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .features .feature-item {
+    width: 100%;
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+}
+
+/* Large desktops and beyond */
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+}
+
+/* Existing styles */
+
+/* New styles for candidate search page */
+.candidate-search {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .candidate-search h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-right: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #searchButton {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #searchButton:hover {
+    background-color: #555;
+  }
+  
+  .candidate-list {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .candidate-list .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .candidate-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .candidate-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+  }
+  
+  .candidate-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .candidate-item p {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 767px) {
+    .search-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-group input {
+      width: 100%;
+    }
+  }
+  
